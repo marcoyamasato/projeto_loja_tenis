@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
+    max-width: 1024px;
+    width: 100%;
+}
+
+
+header > .container{
+
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header{
+    background-color: blue;
+    color: white;
+    padding: 10px 0;
+}
+
+
+header ul li{
+    list-style: none;
+    display: inline;
+}
+
+header a{
+    color: #fff;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+
+.sobre_a_loja{
+    margin: 20px auto;
+}
+
+.sobre_a_loja h2,
+.produtos{
+    color: blue;
+    border-bottom: 2px solid blue;
+    padding-bottom: 10px;
+}
+
+.sobre_a_loja p{
+    margin-top: 15px;
+}
+
+#foto_fachada{
+    height: 250px;
+    margin-right: 20px;
+    width: 100%;
+}
+
+
+.section_produtos{
+    display: grid;
+    margin: 20px auto;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1px;
+    width: 100%;
+}
+
+.section_produtos img{
+    height: 120px;
+    width: 100%;
+}
+
+.produtos{
+    margin: 10px auto;   
+}
+
+.section_produtos p{
+    opacity: 0.7;
+}
+
+.section_produtos button{
+    margin: 10px 0;
+    padding: 6px 4px;
+    width: 90%;
+    background-color: blue;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 640px){
+    .container{
+        display: block;
+        max-width: 300px;
+    }
+
+    header ul li{
+        list-style: none;
+        display: block;
+    }
+
+    .section_produtos article{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+
+    .container{
+        max-width: 700px;
+    }
+    .section_produtos{
+        display: grid;
+        margin: 20px auto;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 1px;
+        width: 100%;
+    }
+
+    .sobre_a_loja{
+        display: block;
+        margin: 20px auto;
+    }
+
+    .sobre_a_loja img{
+        width: 80%;
+    }
+
+
+}
+
